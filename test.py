@@ -7,16 +7,17 @@ from pyspark.ml.feature import Imputer
 import datetime as dt
 from datetime import date
 from delta.tables import *
+import pandas
 
 # COMMAND ----------
 
-#dbutils.widgets.remove('Environment_Variable'
+dbutils.widgets.remove('Environment_Variable'
 
 # COMMAND ----------
 
 # DBTITLE 1,Environment
 #dbutils.widgets.dropdown('Environment_Variable', 'dev', ['dev', 'prod'])
-#environment_var = dbutils.widgets.get("Environment_Variable")
+environment_var = dbutils.widgets.get("Environment_Variable")
 
 #def var_environment() :
 #  environment = environment_var
@@ -177,7 +178,7 @@ mx_catEventReason = "mx_catEventReason"
 mx_Position = "mx_Position"
 #--------------------Bronze Tables
 
-
+password = erd5467
 
 # COMMAND ----------
 
