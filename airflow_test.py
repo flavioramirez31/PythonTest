@@ -64,9 +64,7 @@ with DAG(
 
     #Funcion para realizar consulta a la Base de Datos
     def ApiTest(**op_args):
-        url = "https://api8preview.sapsf.com/odata/v2/FOCompany?$fromDate=1900-01-01&$format=JSON"
-        username = "SFAPI@walmartstoT2"
-        password = 'MXec2021!'
+
         #x=1
         res=requests.get(url, auth=(username, password))
         #print(res)
